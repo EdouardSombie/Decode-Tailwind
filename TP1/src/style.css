@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@theme {
+  --color-big-stone-50: #f5f7fa;
+  --color-big-stone-100: #e9eef5;
+  --color-big-stone-200: #cedae9;
+  --color-big-stone-300: #a3bad6;
+  --color-big-stone-400: #7297be;
+  --color-big-stone-500: #507aa7;
+  --color-big-stone-600: #3d618c;
+  --color-big-stone-700: #334e71;
+  --color-big-stone-800: #2d445f;
+  --color-big-stone-900: #2a3a50;
+  --color-big-stone-950: #1e293a;
+
+  --color-lynch-50: #f5f7fa;
+  --color-lynch-100: #ebeef3;
+  --color-lynch-200: #d3dbe4;
+  --color-lynch-300: #abbcce;
+  --color-lynch-400: #7e98b2;
+  --color-lynch-500: #5d7a97;
+  --color-lynch-600: #4a637f;
+  --color-lynch-700: #3d5067;
+  --color-lynch-800: #354557;
+  --color-lynch-900: #303b4a;
+  --color-lynch-950: #202731;
+
+  --color-pink-50: #fef1f8;
+  --color-pink-100: #fee5f3;
+  --color-pink-200: #ffcaea;
+  --color-pink-300: #ff9fd7;
+  --color-pink-400: #ff63ba;
+  --color-pink-500: #ff2896;
+  --color-pink-600: #f01279;
+  --color-pink-700: #d1055e;
+  --color-pink-800: #ad074d;
+  --color-pink-900: #8f0c43;
+  --color-pink-950: #580024;
+
+  --color-orange-50: #fff4ed;
+  --color-orange-100: #ffe6d4;
+  --color-orange-200: #ffc9a9;
+  --color-orange-300: #ff9b65;
+  --color-orange-400: #fe7239;
+  --color-orange-500: #fc4d13;
+  --color-orange-600: #ed3209;
+  --color-orange-700: #c52209;
+  --color-orange-800: #9c1d10;
+  --color-orange-900: #7e1a10;
+  --color-orange-950: #440a06;
+
+  --font-istok: "Istok Web", sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply flex h-8 w-8 items-center justify-center rounded-full bg-white;
+    svg {
+      @apply fill-pink-500;
+    }
+  }
+}
