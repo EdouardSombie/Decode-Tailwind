@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "tailwindcss";
 
 @theme {
   --color-big-stone-50: #f5f7fa;
@@ -50,6 +50,30 @@
   --color-orange-900: #7e1a10;
   --color-orange-950: #440a06;
 
+  --color-aquamarine-50: #e7fff8;
+  --color-aquamarine-100: #c6ffec;
+  --color-aquamarine-200: #92ffe0;
+  --color-aquamarine-300: #4dffd4;
+  --color-aquamarine-400: #00ffc2;
+  --color-aquamarine-500: #00e8ae;
+  --color-aquamarine-600: #00be90;
+  --color-aquamarine-700: #009878;
+  --color-aquamarine-800: #007860;
+  --color-aquamarine-900: #006250;
+  --color-aquamarine-950: #00382f;
+
+  --color-cyan-50: #eefffd;
+  --color-cyan-100: #c6fffa;
+  --color-cyan-200: #8efff7;
+  --color-cyan-300: #4dfbf3;
+  --color-cyan-400: #19e8e5;
+  --color-cyan-500: #00d5d5;
+  --color-cyan-600: #00a0a4;
+  --color-cyan-700: #027f83;
+  --color-cyan-800: #086367;
+  --color-cyan-900: #0c5255;
+  --color-cyan-950: #002f34;
+
   --font-istok: "Istok Web", sans-serif;
 }
 
@@ -57,7 +81,13 @@
   .btn {
     @apply flex h-8 w-8 items-center justify-center rounded-full bg-white;
     svg {
-      @apply fill-pink-500;
+      @apply dark:fill-lynch-500 h-4 w-auto fill-pink-500;
+    }
+  }
+  .btn-alt {
+    @apply from-aquamarine-400 bg-gradient-to-b to-cyan-500 dark:from-pink-500 dark:to-orange-300;
+    svg {
+      @apply h-auto w-6 fill-black dark:fill-white;
     }
   }
 }
